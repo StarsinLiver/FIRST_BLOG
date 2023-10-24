@@ -3,21 +3,30 @@ import sunrise from "../../assets/img/sunrise.jpg";
 import cat from "../../assets/img/cat.jpg";
 import { Link } from "react-router-dom";
 
-function MainPage() {
+function PropsPage(props : any) {
   return (
     <div
       style={{
-        backgroundImage: `url(${cat})`,
+        backgroundImage: `url(${props.img})`,
         height: "800px",
         minWidth: "1800px",
       }}
+      className="pt-5"
     >
+      <div className="pt-5 me-5">
+        <div className="float-end me-5">
+          <Link to="" className="btn btn-outline-light me-2">
+            로그인
+          </Link>
+          <Link to="" className="btn btn-outline-light">회원가입</Link>
+        </div>
+      </div>
       {/* Header List (Nav) 시작 */}
       <div className="pt-5">
         <div className="pt-5">
           <div className="w-75 mx-auto">
-            <div className="w-75 border-secondary-subtl border-top border-2 border-bottom mx-auto">
-              <ul className="nav justify-content-center m-3">
+            <div className="w-75 mx-auto">
+              <ul className="nav justify-content-center p-3 m-3 border-secondary-subtl border-top border-2 border-bottom">
                 <li className="nav-item me-5">
                   <Link to="/board" className="nav-link me-5" aria-current="page">
                   <i className="fa-solid fa-users" style={{ color: "#ede3e3" }}></i>
@@ -41,7 +50,7 @@ function MainPage() {
                   </Link>
                 </li>
                 <li className="nav-item me-5 ms-2">
-                  <Link to="#" className="nav-link text-white" aria-current="page">
+                  <Link to="/user/board" className="nav-link text-white" aria-current="page">
                   <i className="fa-solid fa-pen-to-square" style={{ color: "#ede3e3" }}></i>
                     <i> 나의 블로그</i>
                   </Link>
@@ -55,7 +64,7 @@ function MainPage() {
       {/* 왼쪽 메인 글 */}
       <div className="mt-5">
         <div className="float-start w-50 mt-5">
-          <h1 className="text-white">산하의 블로그</h1>
+          <h1 className="text-white display-4">산하의 블로그</h1>
           <h2 className="mt-5 mb-5 text-white">샘플 디자인 입니다.</h2>
           <i
             className="fa-brands fa-instagram fa-l mt-3"
@@ -119,4 +128,4 @@ function MainPage() {
   );
 }
 
-export default MainPage;
+export default PropsPage;
