@@ -1,0 +1,16 @@
+
+x
+java:S1488M"]Immediately return this expression instead of assigning it to the temporary variable "user1".(ü¥Ôıÿÿÿÿ
+
+java:S1488U"dImmediately return this expression instead of assigning it to the temporary variable "optionalUser".(÷ïƒ´ÿÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‚•¡£ûÿÿÿÿ
+@	java:S106)"+Replace this use of System.out by a logger.(ìáÏ
+E	java:S106+"+Replace this use of System.out by a logger.(µÚê÷ùÿÿÿÿ
+?	java:S1060"+Replace this use of System.out by a logger.(¤“ø)
+E	java:S1061"+Replace this use of System.out by a logger.(ì¡†¿şÿÿÿÿ
+H
+java:S1135I"2Complete the task associated to this TODO comment.(ˆ¨Ò
+M
+java:S1135R"2Complete the task associated to this TODO comment.(·¬»†ıÿÿÿÿ
+H
+java:S1135Z"2Complete the task associated to this TODO comment.(…êŸƒ
